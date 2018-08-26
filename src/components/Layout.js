@@ -1,10 +1,14 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
+import Header from './common/Header';
 
 class Layout extends React.Component {
   render() {
     return (
       <div className="container-fluid">
+        <Header
+          loading={this.props.loading}
+        />
         {this.props.children}
       </div>
     );
@@ -12,7 +16,8 @@ class Layout extends React.Component {
 }
 
 Layout.propTypes = {
-  children: PropTypes.object.isRequired
+  children: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
