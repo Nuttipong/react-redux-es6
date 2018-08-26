@@ -8,11 +8,7 @@ module.exports = {
         rules: [
             {test: /\.(js|jsx)$/, exclude: /node_modules/, use: {loader: 'babel-loader'}},
             {test: /\.html$/, use: [{loader: 'html-loader', options: {minimize: true}}]},
-            {test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader']},
-            {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, use: {loader: 'file'}},
-            {test: /\.(woff|woff2)$/, use: {loader: 'url?prefix=font/&limit=5000'}},
-            {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, use: {loader: 'url?limit=10000&mimetype=application/octet-stream'}},
-            {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, use: {loader: 'url?limit=10000&mimetype=image/svg+xml'}}
+            {test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'style-loader', 'postcss-loader']},
         ]
     },
     output: {
