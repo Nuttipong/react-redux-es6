@@ -8,4 +8,9 @@ with yarn:
 ```
 yarn install
 ```
+```
+
+Now run `yarn start` from the terminal to launch the app:
+
+```
 
