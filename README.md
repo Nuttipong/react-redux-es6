@@ -9,8 +9,7 @@ with yarn:
 yarn install
 ```
 ```
-
-Now run `yarn start` from the terminal to launch the app:
-
+run `yarn start` from the terminal to launch the app
+run `yarn test` from the terminal to launch the test
 ```
 
