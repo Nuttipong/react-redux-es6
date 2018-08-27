@@ -51,7 +51,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/',
-        filename: '[name].js'
+        filename: '[name].[hash].js'
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),

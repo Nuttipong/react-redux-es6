@@ -5,7 +5,9 @@ class AboutPage extends React.Component {
     return (
       <div>
         <h1>About</h1>
-        <p>This application uses React, Redux, React Router, Bootstrab3, Webpack4 and a variety of other helpful libraries.</p>
+        <p>For any questions or concerns, please contact us at OnlineSupport@marvel.com.</p>
+        <p>Any personal information provided will be handled in accordance with our Privacy Policy.</p>
+        <p>Marvel does not accept or consider unsolicited ideas, suggestions, or materials. Please see our Terms of Use for more details.</p>
       </div>
     );
   }
